@@ -15,8 +15,18 @@
     <div class="column">
         <!-- give the textarea a title -->
         <h3>BattlePoker Bank Editor</h3>
-        <textarea id="textbox_input" oninput="changeFunction()" placeholder="Paste a bank file here"></textarea>
+        <textarea id="textbox_input" oninput="changeFunction()" placeholder="Paste a bank file here, and update your account ID using the dropdown below"></textarea>
         <textarea id="textbox_output" placeholder="Re-signed bank file will appear here" onclick="textbox_output_onclick()" readonly></textarea>
+        <!-- add a dropdown with choices 1 and 2, and center the dropdown -->
+        <div class="dropdown">
+            <!-- on the same horizontal line as the dropdown, add the text "S"-->
+            <span>1-S2-</span>
+            <select id="dropdown" onchange="changeFunction()">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            <span>-XXXXXX</span>
+        </div>
         <h3>
             Made with 💗 by DrDavidDuke
         </h3>
